@@ -1,0 +1,48 @@
+:root {
+    --header-background: black;
+    --header-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-color);
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    >* {
+        flex: 1;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        ul {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                display: block;
+                flex: 1 1 100%;
+                a {
+                    color: var(--header-color);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
